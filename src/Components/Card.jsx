@@ -1,8 +1,13 @@
 import React from 'react'
+import '../Card.css';
 
-const Card = () => {
+const Card = ({nombre, apellido, correo}) => {
     return (
-        <div>¡Hola, soy una tarjeta!</div>
+        <div className='estiloCard'>
+            <h2>Gracias, {nombre} {apellido}!</h2>
+            <h4>Te enviamos tu e-book al siguiente correo</h4>
+            <p className='botonCard'>{correo}</p>
+        </div>
     )
 }
 
